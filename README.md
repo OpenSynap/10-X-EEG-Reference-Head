@@ -8,8 +8,7 @@ Published by **OpenSynap**, but designed as a general-purpose resource and not t
 
 ## Repository structure
 
-```text
-.
+OpenSynap/10-X EEG Reference Head
 ├── README.md
 ├── LICENSE
 ├── THIRD_PARTY_LICENSES.md
@@ -19,7 +18,16 @@ Published by **OpenSynap**, but designed as a general-purpose resource and not t
 │   ├── reference-head-10-20.stl
 │   ├── reference-head-10-20.obj
 │   ├── reference-head-10-20.ply
-│   ├── coordinates.csv
+│   │
+│   ├── reference-head-10-20 (labeled).blend
+│   ├── reference-head-10-20 (labeled).ply
+│   │
+│   ├── reference-head-10-20 (sites only).blend
+│   ├── reference-head-10-20 (sites only).stl
+│   ├── reference-head-10-20 (sites only).obj
+│   ├── reference-head-10-20 (sites only).ply
+│   │
+│   ├── sites.csv
 │   └── renders/
 │
 ├── 10-10/
@@ -27,7 +35,16 @@ Published by **OpenSynap**, but designed as a general-purpose resource and not t
 │   ├── reference-head-10-10.stl
 │   ├── reference-head-10-10.obj
 │   ├── reference-head-10-10.ply
-│   ├── coordinates.csv
+│   │
+│   ├── reference-head-10-10 (labeled).blend
+│   ├── reference-head-10-10 (labeled).ply
+│   │
+│   ├── reference-head-10-10 (sites only).blend
+│   ├── reference-head-10-10 (sites only).stl
+│   ├── reference-head-10-10 (sites only).obj
+│   ├── reference-head-10-10 (sites only).ply
+│   │
+│   ├── sites.csv
 │   └── renders/
 │
 ├── 10-5/
@@ -35,16 +52,23 @@ Published by **OpenSynap**, but designed as a general-purpose resource and not t
 │   ├── reference-head-10-5.stl
 │   ├── reference-head-10-5.obj
 │   ├── reference-head-10-5.ply
-│   ├── coordinates.csv
+│   │
+│   ├── reference-head-10-5 (labeled).blend
+│   ├── reference-head-10-5 (labeled).ply
+│   │
+│   ├── reference-head-10-5 (sites only).blend
+│   ├── reference-head-10-5 (sites only).stl
+│   ├── reference-head-10-5 (sites only).obj
+│   ├── reference-head-10-5 (sites only).ply
+│   │
+│   ├── sites.csv
 │   └── renders/
 │
-└── bare-head/
+└── Bare Head/
     ├── reference-head.blend
     ├── reference-head.stl
     ├── reference-head.obj
-    ├── reference-head.ply
-    └── renders/
-```
+    └── reference-head.ply
 
 ## Included reference sets
 
