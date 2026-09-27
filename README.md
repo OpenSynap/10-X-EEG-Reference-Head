@@ -8,7 +8,8 @@ Published by **OpenSynap**, but designed as a general-purpose resource and not t
 
 ## Repository structure
 
-OpenSynap/10-X EEG Reference Head
+```text
+OpenSynap/reference-head
 ├── README.md
 ├── LICENSE
 ├── THIRD_PARTY_LICENSES.md
@@ -18,57 +19,27 @@ OpenSynap/10-X EEG Reference Head
 │   ├── reference-head-10-20.stl
 │   ├── reference-head-10-20.obj
 │   ├── reference-head-10-20.ply
-│   │
 │   ├── reference-head-10-20 (labeled).blend
 │   ├── reference-head-10-20 (labeled).ply
-│   │
 │   ├── reference-head-10-20 (sites only).blend
 │   ├── reference-head-10-20 (sites only).stl
 │   ├── reference-head-10-20 (sites only).obj
 │   ├── reference-head-10-20 (sites only).ply
-│   │
 │   ├── sites.csv
 │   └── renders/
 │
 ├── 10-10/
-│   ├── reference-head-10-10.blend
-│   ├── reference-head-10-10.stl
-│   ├── reference-head-10-10.obj
-│   ├── reference-head-10-10.ply
-│   │
-│   ├── reference-head-10-10 (labeled).blend
-│   ├── reference-head-10-10 (labeled).ply
-│   │
-│   ├── reference-head-10-10 (sites only).blend
-│   ├── reference-head-10-10 (sites only).stl
-│   ├── reference-head-10-10 (sites only).obj
-│   ├── reference-head-10-10 (sites only).ply
-│   │
-│   ├── sites.csv
-│   └── renders/
+│   └── ...
 │
 ├── 10-5/
-│   ├── reference-head-10-5.blend
-│   ├── reference-head-10-5.stl
-│   ├── reference-head-10-5.obj
-│   ├── reference-head-10-5.ply
-│   │
-│   ├── reference-head-10-5 (labeled).blend
-│   ├── reference-head-10-5 (labeled).ply
-│   │
-│   ├── reference-head-10-5 (sites only).blend
-│   ├── reference-head-10-5 (sites only).stl
-│   ├── reference-head-10-5 (sites only).obj
-│   ├── reference-head-10-5 (sites only).ply
-│   │
-│   ├── sites.csv
-│   └── renders/
+│   └── ...
 │
-└── Bare Head/
+└── bare-head/
     ├── reference-head.blend
     ├── reference-head.stl
     ├── reference-head.obj
     └── reference-head.ply
+```
 
 ## Included reference sets
 
