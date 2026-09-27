@@ -1,0 +1,114 @@
+# 10-X EEG Reference Head
+
+An open 3D reference head for EEG electrode positioning across the **10-20, 10-10, and 10-5 systems**.
+
+The project is intended for EEG researchers, developers, students, and enthusiasts who need reusable 10-X electrode reference geometry on an anatomically averaged human head model.
+
+Published by **OpenSynap**, but designed as a general-purpose resource and not tied to OpenSynap hardware.
+
+## Repository structure
+
+```text
+.
+├── README.md
+├── LICENSE
+├── THIRD_PARTY_LICENSES.md
+│
+├── 10-20/
+│   ├── reference-head-10-20.blend
+│   ├── reference-head-10-20.stl
+│   ├── reference-head-10-20.obj
+│   ├── reference-head-10-20.ply
+│   ├── coordinates.csv
+│   └── renders/
+│
+├── 10-10/
+│   ├── reference-head-10-10.blend
+│   ├── reference-head-10-10.stl
+│   ├── reference-head-10-10.obj
+│   ├── reference-head-10-10.ply
+│   ├── coordinates.csv
+│   └── renders/
+│
+├── 10-5/
+│   ├── reference-head-10-5.blend
+│   ├── reference-head-10-5.stl
+│   ├── reference-head-10-5.obj
+│   ├── reference-head-10-5.ply
+│   ├── coordinates.csv
+│   └── renders/
+│
+└── bare-head/
+    ├── reference-head.blend
+    ├── reference-head.stl
+    ├── reference-head.obj
+    ├── reference-head.ply
+    └── renders/
+```
+
+## Included reference sets
+
+| System | Recording sites |
+|---|---:|
+| 10-20 | 19 |
+| 10-10 | 71 |
+| 10-5 | 339 |
+
+The 10-5 model uses the explicitly defined **339-site scalp subset** accepted for this project. It does not treat every label found in generic 10-5 inventories as a physical scalp recording site.
+
+Each EEG-system folder contains the corresponding 3D reference models, canonical CSV coordinates, and reference renders. `bare-head/` contains the same reference head without EEG markers.
+
+## Sources and methodology
+
+The base head geometry was derived primarily from the **ICBM152 Extended 2020 asymmetric** anatomical dataset.
+
+ICBM152 was selected because it provides an adult population-average anatomical reference in standardized MNI space, making it suitable as a reproducible scalp-reference geometry.
+
+EEG positions were generated on the head surface from fiducials, measured scalp contours, and surface arc-length fractions. Published template XYZ coordinates were not used as the canonical placement method.
+
+The placement and nomenclature work was based on established sources for the 10-X family, including:
+
+- Jasper (1958) — International 10-20 system
+- Klem et al. (1999) — IFCN 10-20 description
+- ACNS Guideline 2 — 10-10 nomenclature
+- Oostenveld & Praamstra (2001) — 10-5 extension
+
+Third-party datasets, literature, licenses, and their roles in the project are documented in [`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md).
+
+## Coordinate system
+
+Canonical coordinates use:
+
+- **MNI RAS+**
+- **millimetres**
+
+The CSV coordinates are the canonical reference data. Marker meshes and labels are visualization geometry and should not be used to regenerate canonical coordinates.
+
+## Known limitations
+
+This project is an **EEG scalp-reference model**, not a claim of full anatomical validation of an entire human head.
+
+Known upstream limitations include:
+
+- the natural chin / upper-neck region remains under a formal anatomical HOLD;
+- the inion is an atlas-surface estimate with documented contour caveats;
+- the dense 10-5 model is a coordinate/reference visualization, not a physical EEG-cap fit validation.
+
+These limitations do not change the released, locked scalp-coordinate sets.
+
+## AI-assisted development
+
+Development was AI-assisted.
+
+- **GPT-6 Sol** was used primarily for geometry/modeling workflows, implementation, validation, and QC.
+- **Luna** was used primarily for literature review, source discovery, and research support.
+
+Final outputs and acceptance decisions were manually reviewed before release.
+
+## License
+
+Unless otherwise noted, original project-owned model assets in this repository are released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+
+See [`LICENSE`](LICENSE) for the license text.
+
+Third-party source material remains subject to its original license and attribution requirements. See [`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md) for details.
