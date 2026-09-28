@@ -6,42 +6,7 @@ The project is intended for EEG researchers, developers, students, and enthusias
 
 Published by **OpenSynap**, but designed as a general-purpose resource and not tied to OpenSynap hardware.
 
-## Repository structure
-
-```text
-OpenSynap/reference-head
-├── README.md
-├── LICENSE
-├── THIRD_PARTY_LICENSES.md
-│
-├── 10-20/
-│   ├── reference-head-10-20.blend
-│   ├── reference-head-10-20.stl
-│   ├── reference-head-10-20.obj
-│   ├── reference-head-10-20.ply
-│   ├── reference-head-10-20 (labeled).blend
-│   ├── reference-head-10-20 (labeled).ply
-│   ├── reference-head-10-20 (sites only).blend
-│   ├── reference-head-10-20 (sites only).stl
-│   ├── reference-head-10-20 (sites only).obj
-│   ├── reference-head-10-20 (sites only).ply
-│   ├── sites.csv
-│   └── renders/
-│
-├── 10-10/
-│   └── ...
-│
-├── 10-5/
-│   └── ...
-│
-└── bare-head/
-    ├── reference-head.blend
-    ├── reference-head.stl
-    ├── reference-head.obj
-    └── reference-head.ply
-```
-
-## Included reference sets
+## Available reference sets
 
 | System | Recording sites |
 |---|---:|
@@ -51,7 +16,28 @@ OpenSynap/reference-head
 
 The 10-5 model uses the explicitly defined **339-site scalp subset** accepted for this project. It does not treat every label found in generic 10-5 inventories as a physical scalp recording site.
 
-Each EEG-system folder contains the corresponding 3D reference models, canonical CSV coordinates, and reference renders. `bare-head/` contains the same reference head without EEG markers.
+## 3D model downloads
+
+The full 3D model files are distributed through the repository's **GitHub Releases**.
+
+Available model packages include:
+
+- 10-20 reference head
+- 10-10 reference head
+- 10-5 reference head
+- bare reference head
+
+Where available, releases also include labeled and sites-only variants in formats such as **BLEND, STL, OBJ, and PLY**.
+
+Use the **Releases** section of this repository to download only the model files you need.
+
+## Coordinates and renders
+
+Canonical electrode coordinates and reference renders are available directly in the repository.
+
+The coordinate files provide the released 10-20, 10-10, and 10-5 site positions, while the render images provide visual references from multiple viewing angles.
+
+The CSV coordinates are the canonical reference data. Marker meshes, labels, and rendered images are visualization assets and should not be used to regenerate canonical coordinates.
 
 ## Sources and methodology
 
@@ -77,8 +63,6 @@ Canonical coordinates use:
 - **MNI RAS+**
 - **millimetres**
 
-The CSV coordinates are the canonical reference data. Marker meshes and labels are visualization geometry and should not be used to regenerate canonical coordinates.
-
 ## Known limitations
 
 This project is an **EEG scalp-reference model**, not a claim of full anatomical validation of an entire human head.
@@ -102,7 +86,7 @@ Final outputs and acceptance decisions were manually reviewed before release.
 
 ## License
 
-Unless otherwise noted, original project-owned model assets in this repository are released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+Unless otherwise noted, OpenSynap's original contributions in this repository are released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
 
 See [`LICENSE`](LICENSE) for the license text.
 
